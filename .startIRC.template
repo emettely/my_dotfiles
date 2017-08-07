@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+echo "Creating a new session proxytunnel"
+tmux new-session -d -s proxytunnel
+echo "Starting proxytunnel"
+tmux send-keys "proxytunnel -a 6697 -p <proxypath>:<proxyport> -d <irchost>:<ircport>" C-m

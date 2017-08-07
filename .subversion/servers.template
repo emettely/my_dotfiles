@@ -1,0 +1,12 @@
+[groups]
+<group name> = <uri>
+ 
+[<group name>]
+ssl-client-cert-file=<cert p12 path>
+ssl-client-cert-password=<password>
+ 
+[global]
+http-proxy-host=<host>
+http-proxy-port=<port>
+ssl-trust-default-ca=yes
+http-timeout=0

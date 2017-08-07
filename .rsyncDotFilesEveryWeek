@@ -1,0 +1,2 @@
+#!/bin/sh
+rsync -avzh --stats --partial --inplace --progress -t /Users/okunoe01/.??* /Users/okunoe01/Box\ Sync/backUps/my_dotfiles 
