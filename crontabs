@@ -1,2 +1,1 @@
 0 10 * * 1 bash /Users/okunoe01/.rsyncDotFilesEveryWeek
-0 10 * * 1 rm -rf /Users/okunoe01/Box\ Sync/backUps/my_dotfiles/.Trash
