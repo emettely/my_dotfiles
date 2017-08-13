@@ -1,2 +1,2 @@
 #!/bin/sh
-rsync -avzh --stats --partial --inplace --progress -t /Users/okunoe01/.??* /Users/okunoe01/Box\ Sync/backUps/my_dotfiles 
+rsync -avzh --exclude='.DS_Store' --exclude='.Trash' --exclude='.rnd' --stats --partial --inplace --progress -t /Users/okunoe01/.??* /Users/okunoe01/bin /Users/okunoe01/Box\ Sync/backUps/my_dotfiles 

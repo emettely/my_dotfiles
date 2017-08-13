@@ -42,3 +42,7 @@ settings.xml
 .subversion/config
 .subversion/README.txt
 .tooling/gradle/versions.json
+.local/share/Trash
+.xrebel/.installid
+.xrebel/xrebel-eclipse.log
+.xrebel/xrebel.prefs
