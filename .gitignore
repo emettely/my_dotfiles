@@ -12,6 +12,7 @@
 .zshrc
 .stCommitMsg
 .viminfo
+.vim/.netrwhist
 .z
 .zcompdump-mc-s103804-5.2
 .profile
@@ -46,3 +47,8 @@ settings.xml
 .xrebel/.installid
 .xrebel/xrebel-eclipse.log
 .xrebel/xrebel.prefs
+.hgapi_key
+.npm
+repl-history
+update-notifier-npm.json
+.zshenv
