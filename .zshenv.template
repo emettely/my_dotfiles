@@ -1,0 +1,24 @@
+[[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
+# If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | printf '=> Public key copied to pasteboard.\n'";
+alias sb6=""
+alias sb7=""
+alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
+alias zshrc='. ~/.zshrc'
+alias irc='. ~/.startIRC'
+alias cpr='rsync -a --stats --progress'
+alias now='date +"%T"'
+alias df='df -H'
+alias du='du -ch'
+alias ton2=''
+alias ecl='open -a /Applications/Eclipse.app'
+alias backup='bash ~/.rsyncDotFilesEveryWeek'
+alias mydots='cd /Users/okunoe01/Box\ Sync/backUps/my_dotfiles/'
+alias emacs='open -a /Applications/Emacs.app $1'
+
+
+export MAVEN_OPTS=""
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+
