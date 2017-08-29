@@ -12,6 +12,10 @@ syntax on
 
 set backspace=indent,eol,start
 set clipboard=unnamed
+" tabs to 4 spaces and always spaces
+set tabstop=4
+set expandtab
+set autoindent
 
 " ==============================
 " Plugins

@@ -315,8 +315,24 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (add-to-list 'package-archives
-               '("melpa" . "http://melpa.org/packages/"))
-  )
+               '("melpa" . "http://melpa.org/packages/")
+               '("marmalade" . "http://marmalade-repo.org/packages/")
+               '("gnu" . "http://elpa.gnu.org/packages/"))
+
+  ;; org setup
+  (setq org-agenda-files '("~/Dropbox/Org/"))
+  (with-eval-after-load 'org
+    (setq org-default-notes-file (concat org-directory "global-org.org"))
+    (defun air-pop-to-org-agenda (split)
+      "Visit the org agenda, in the current window or a SPLIT."
+      (interactive "P")
+      (org-agenda-list)
+      (when (not split)
+        (delete-other-windows)))
+
+    (define-key global-map (kbd "C-c t a") 'air-pop-to-org-agenda)
+    ;; Set TODO keywords
+    (setq org-todo-keywords '((type "TODO" "IN-PROGRESS" "TO-READ" "TO-WATCH" "TO-PLAY" "WAITING" "ICEBOX" "|" "DONE" "CANCELLED" "WONT-DO")))))
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
