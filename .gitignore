@@ -52,3 +52,4 @@ settings.xml
 repl-history
 update-notifier-npm.json
 .zshenv
+.python_history
