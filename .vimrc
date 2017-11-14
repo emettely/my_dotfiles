@@ -12,6 +12,7 @@ syntax on
 
 set backspace=indent,eol,start
 set clipboard=unnamed
+set mouse=v
 " tabs to 4 spaces and always spaces
 set tabstop=4
 set expandtab
