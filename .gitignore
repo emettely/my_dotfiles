@@ -60,3 +60,4 @@ fontList.json
 .hg_api_key
 .hg_graphite_key
 htoprc
+.#*
