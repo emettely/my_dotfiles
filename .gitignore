@@ -54,3 +54,9 @@ update-notifier-npm.json
 .zshenv
 .python_history
 .z.20136
+fontList.json
+.ipython/*
+.jupyter/*
+.hg_api_key
+.hg_graphite_key
+htoprc
