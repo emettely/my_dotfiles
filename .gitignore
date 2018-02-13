@@ -61,3 +61,4 @@ fontList.json
 .hg_graphite_key
 htoprc
 .#*
+.node-gyp
