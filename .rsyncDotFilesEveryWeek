@@ -1,2 +1,3 @@
 #!/bin/sh
+crontab -l > ~/.crontab
 rsync -avzh --exclude='.DS_Store' --exclude='.Trash' --exclude='.atom' --exclude='.rnd' --stats --partial --inplace --progress -t /Users/okunoe01/.??* /Users/okunoe01/bin /Users/okunoe01/Dropbox\ \(BBC\)/Migrated\ from\ Box/backUps/my_dotfiles 

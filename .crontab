@@ -1,0 +1,3 @@
+0 10 * * 1 bash /Users/okunoe01/.rsyncDotFilesEveryWeek
+0 16 * * * open -a /Applications/Firefox.app/ open -a /Applications/Airtable.app
+59 12 * * 5 open -a /Applications/Firefox.app https://www.google.com/

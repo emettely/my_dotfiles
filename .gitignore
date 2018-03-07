@@ -62,3 +62,12 @@ fontList.json
 htoprc
 .#*
 .node-gyp
+.vscode-react-native
+.vscode/extensions
+.config/configstore/update-notifier-gatsby-cli.json
+.jspm/config
+.matplotlib/fontList.cache
+.sonarlint/telemetry/idea/usage
+.ivy2
+.netrc
+.parallel
