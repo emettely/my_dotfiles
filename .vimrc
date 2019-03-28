@@ -50,6 +50,7 @@ Plug 'fatih/vim-go'
 Plug 'majutsushi/tagbar'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'junegunn/goyo.vim'
+Plug 'luochen1990/rainbow'
 
 call plug#end()
 
@@ -82,6 +83,12 @@ let g:solarized_termcolors=256
 let macvim_skip_colorscheme=1
 
 "
+" ==============================
+"	Rainbow
+" ==============================
+"
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
+
 " ==============================
 "	Search
 " ==============================
@@ -167,3 +174,4 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 nmap q :nohlsearch<CR>
+

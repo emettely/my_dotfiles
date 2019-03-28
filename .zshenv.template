@@ -2,23 +2,45 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+alias sb6="ssh developer@cloud6.sandbox.bbc.co.uk"
+alias sb7="ssh developer@cloud7.sandbox.bbc.co.uk"
+
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | printf '=> Public key copied to pasteboard.\n'";
-alias sb6=""
-alias sb7=""
-alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
-alias zshrc='. ~/.zshrc'
 alias irc='. ~/.startIRC'
+alias zshrc='. ~/.zshrc'
 alias cpr='rsync -a --stats --progress'
 alias now='date +"%T"'
 alias df='df -H'
 alias du='du -ch'
-alias ton2=''
-alias ecl='open -a /Applications/Eclipse.app'
 alias backup='bash ~/.rsyncDotFilesEveryWeek'
+alias offline="ifconfig $(networksetup -listallhardwareports | grep -E '(Wi-Fi|AirPort)' -A 1 | grep -o "en.") down"
+
+# Directories
 alias mydots='cd /Users/okunoe01/Box\ Sync/backUps/my_dotfiles/'
+alias pwork='cd /Users/okunoe01/Google\ Drive/workspace'
+alias work='cd /Users/okunoe01/workspace'
+
+# Applications
+alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
+alias ecl='open -a /Applications/Eclipse.app'
 alias emacs='open -a /Applications/Emacs.app $1'
+alias nw='/Applications/nwjs.app/Contents/MacOS/nwjs $1'
+alias ij='open -a /Applications/IntelliJ\ IDEA.app $1'
+alias vs='open -a /Applications/Visual\ Studio\ Code.app $1'
 
-
-export MAVEN_OPTS=""
+# Java
+export MAVEN_OPTS="-Djavax.net.ssl.trustStore=/Users/okunoe01/workspace/jssecacerts -Djavax.net.ssl.keyStore=/Users/okunoe01/workspace/dev.bbc.co.uk.p12 -Djavax.net.ssl.keyStorePassword=19902apple -Djavax.net.ssl.keyStoreType=PKCS12"
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
+# pyspark
+#export SPARK_HOME=/opt/spark
+#export PATH=$SPARK_HOME/bin:$PATH
+#export PYSPARK_DRIVER_PYTHON=jupyter
+#export PYSPARK_DRIVER_PYTHON_OPTS='notebook'
+#export PYSPARK_PYTHON=python3
+#
+# virtualenv
+#export WORKON_HOME=~/virtualenvs
+#export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+#source /usr/local/bin/virtualenvwrapper.sh
+#export PATH="/usr/local/sbin:$PATH"
