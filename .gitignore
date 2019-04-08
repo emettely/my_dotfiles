@@ -99,3 +99,5 @@ hub
 *.pyc
 *.jar
 .matplotlib
+.Rhistory
+.rstudio-desktop
