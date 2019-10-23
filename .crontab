@@ -1,2 +1,2 @@
 0 10 * * 1 bash /Users/okunoe01/.rsyncDotFilesEveryWeek
-0 8 * * * open -a /Applications/Firefox.app https://jira.dev.bbc.co.uk/secure/RapidBoard.jspa?rapidView=8748&projectKey=SUMMA
+0 16 * * * open -a /Applications/Notion.app

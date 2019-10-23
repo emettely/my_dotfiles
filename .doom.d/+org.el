@@ -1,13 +1,24 @@
 ;;;  -*- lexical-binding: t; -*-
 
-(setq org-directory '("~/Dropbox (BBC)/Apps/orgzly"))
+(setq org-directory '("~/Dropbox (BBC)/Apps/orgzly/"))
 (setq org-agenda-files org-directory)
 
 ;; open file types with extension
 (add-to-list 'auto-mode-alist '("\\.\\(org\\|org_archive\\|txt\\)$" . org-mode))
 
 (with-eval-after-load 'org
-  (setq org-default-notes-file (concat (first org-directory) "/refile.org"))
+  (setq org-default-notes-file (concat (first org-directory) "refile.org"))
+
+;;  (setq org-capture-templates
+;;        '(("t" "Todo" entry (file+headline (concat (first org-directory) "refile.org") "Tasks")
+;;           "* TODO %?\n  %i\n  %a")))
+
+;;  (setq org-capture-templates
+;;        '(("t" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")
+;;           "* TODO %?\n  %i\n  %a")
+;;          ("j" "Journal" entry (file+datetree "~/org/journal.org")
+;;           "* %?\nEntered on %U\n  %i\n  %a")))
+
   (setq org-use-fast-todo-selection t)
 
     ;; Set TODO keywords

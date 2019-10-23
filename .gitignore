@@ -101,3 +101,9 @@ hub
 .matplotlib
 .Rhistory
 .rstudio-desktop
+.config/gatsby
+.config/yarn
+.electron
+.electron-gyp
+.yarn
+.local
